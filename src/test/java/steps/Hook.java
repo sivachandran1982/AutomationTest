@@ -42,8 +42,10 @@ public class Hook extends BaseUtil{
         //Chrome driver
 //        System.setProperty("webdriver.chrome.driver", "/Users/karthikkk/ChromeDriver/chromedriver");
 //        base.Driver = new ChromeDriver();
+        
+        String Currentloc = System.getProperty("user.dir");
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\sivac\\Downloads\\SeleniumWithCucucumber-master\\SeleniumWithCucucumber-master\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", Currentloc + "\\chromedriver.exe");
         base.Driver = new ChromeDriver();
     }
 

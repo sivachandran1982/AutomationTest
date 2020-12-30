@@ -28,9 +28,11 @@ import static org.openqa.selenium.support.locators.RelativeLocator.withTagName;
 public class Main {
 
     public static void main(String[] args) {
+    	
+    	String Currentloc = System.getProperty("user.dir");
 
         //Selenium 4
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\sivac\\Downloads\\SeleniumWithCucucumber-master\\SeleniumWithCucucumber-master\\selenium-chrome-driver-3.141.5.jar");
+        System.setProperty("webdriver.chrome.driver", Currentloc + "\\selenium-chrome-driver-3.141.5.jar");
         var chromeDriver = new ChromeDriver();
 
         var chromeDevTools = chromeDriver.getDevTools();
